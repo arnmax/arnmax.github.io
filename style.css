@@ -1,29 +1,49 @@
+/* general stuff */
+
 body{
   font-family: Arial, sans-serif;
   color: black;
 }
 
-header{
-  /* border: 1px black solid; */
-  background-image: url("images/header_bkgnd.jpg");
-  background-repeat: round;
-  margin-top: -10px;
-  margin-right: -10px;
-  margin-left: -10px;
-  height: 220px;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-header div{
+/* header formatting */
+
+header{
+  background-image: url("images/header_bkgnd.jpg");
+  background-repeat: round;
+  height: 220px;
+  position: relative;
+}
+
+header div a{
   background-color: rgba(110,110 ,110 , 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   height: 220px;
+  text-decoration: none;
+}
+
+#main_title{
+  position: absolute;
+  bottom: 35px;
+  color: white;
+}
+
+#main_subtitle{
+  position: absolute;
+  bottom: 5px;
+  color: white;
 }
 
 #atom_logo{
+  position: absolute;
+  top: 50px;
   width: 80px;
   height: 80px;
 }
@@ -32,10 +52,6 @@ header div{
 
 nav ul {
   list-style-type: none;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: 0px;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
   display: flex;
@@ -67,4 +83,31 @@ section{
   border: 1px black solid;
   width: 900px;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+section a:link, section a:visited{
+  color: #317DC5;
+  text-decoration: none;
+}
+
+section a:hover{
+  text-decoration: underline;
+  color: #549bdd;
+}
+
+#container_presentation{
+  flex: 2;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+#my_picture{
+  flex: 0.5;
+  border-radius: 25px;
 }
