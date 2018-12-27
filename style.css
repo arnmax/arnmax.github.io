@@ -189,7 +189,8 @@ footer img:hover {
 }
 
 #presentation_picture {
-  flex: 0.5;
+  /* flex: 0.5; */
+  width: 200px;
   box-shadow: 4px 6px 8px black;
   border-radius: 25px;
 }
