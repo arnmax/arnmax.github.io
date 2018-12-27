@@ -1,7 +1,7 @@
 /* General options */
 body {
   font-family: Palatino, 'Times New Roman', Arial, sans-serif;
-  font-size: medium;
+  font-size: large;
   color: black;
 }
 
@@ -183,21 +183,17 @@ footer img:hover {
 
 /* Home page*/
 #presentation {
-  display: flex;
-  flex-direction: row;
+  overflow: auto;
   margin-bottom: 20px;
 }
 
 #presentation_picture {
-  /* flex: 0.5; */
   width: 200px;
+  height: 234px;
+  float: left;
   box-shadow: 4px 6px 8px black;
   border-radius: 25px;
-}
-
-#presentation_text {
-  flex: 2;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #my_description {
