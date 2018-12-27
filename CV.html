@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>My website test</title>
-  </head>
 
-  <div id="bloc_page">
-    <body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>My website test</title>
+</head>
 
-      <header>
-        <div class="">
-          <a href="index.html">
-          <img id="atom_logo" src="images/atom_logo.svg" alt="Logo atome">
-          <h1 id="main_title">Maxime Arnal</h1>
-          <h2 id="main_subtitle">PhD student</h2>
-          </a>
-        </div>
-      </header>
+<body>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="CV.html">CV</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <header>
+    <div id="banner">
+      <a href="index.html">
+        <img id="atom_logo" src="images/atom_logo.svg" alt="Logo atome">
+        <h1 id="main_title">Maxime Arnal</h1>
+        <h2 id="main_subtitle">PhD student</h2>
+      </a>
+    </div>
+  </header>
 
-      <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porttitor augue, vitae tempor lectus. Suspendisse placerat, dui ac laoreet semper, orci ante molestie purus, posuere posuere elit massa non libero. Mauris facilisis mauris at mi aliquet semper. Integer sollicitudin gravida eros, ut faucibus metus vehicula eget. Sed rutrum vel lorem eget blandit. Aliquam non fringilla sem, et semper urna. In fermentum purus vel metus rutrum, vel posuere ex egestas. Ut vel libero quis nisl blandit feugiat. Praesent tellus sapien, aliquet non quam eu, tristique varius nibh. Phasellus varius malesuada orci, eu porta arcu vehicula vitae. <br>
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent sit amet pretium ligula, vel finibus nisi. Sed sagittis tortor eget urna ullamcorper, non sollicitudin leo consequat. Cras quis massa nec ex lacinia tempor. Phasellus efficitur fermentum tempor. Aliquam ornare scelerisque est sit amet placerat. Nunc bibendum diam urna, non feugiat libero accumsan a.</p>
-      </section>
+  <nav id="navbar">
+    <a id="logoToTop" href="#banner" class="disabledLink"><img id="atom_logo_navbar" class="fade-out " src="images/atom_logo.svg" alt="Logo atome"></a>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a class="active disabledLink" href="CV.html">Resume</a>
+      <a href="publications.html">Publications</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
+  <div class="content">
+    <section id="cv">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a porttitor augue, vitae tempor lectus. Suspendisse placerat, dui ac laoreet semper, orci ante molestie purus, posuere posuere elit massa non libero. Mauris facilisis mauris at
+        mi aliquet semper. Integer sollicitudin gravida eros, ut faucibus metus vehicula eget. Sed rutrum vel lorem eget blandit. Aliquam non fringilla sem, et semper urna. In fermentum purus vel metus rutrum, vel posuere ex egestas. Ut vel libero
+        quis nisl blandit feugiat. Praesent tellus sapien, aliquet non quam eu, tristique varius nibh. Phasellus varius malesuada orci, eu porta arcu vehicula vitae. <br>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent sit amet pretium ligula, vel finibus nisi. Sed sagittis tortor eget urna ullamcorper, non sollicitudin leo consequat. Cras quis massa nec ex
+        lacinia tempor. Phasellus efficitur fermentum tempor. Aliquam ornare scelerisque est sit amet placerat. Nunc bibendum diam urna, non feugiat libero accumsan a.</p>
+    </section>
 
-    </body>
+    <footer>
+      <div id="footer_logos">
+        <a href="http://www.linkedin.com/in/maxime-arnal-6a7241155" target="_blank"><img id="linkedin_logo" src="images/linkedin_logo.png" alt="LinkedIn logo"></a>
+        <a href="https://github.com/arnmax" target="_blank"><img id="github_logo" src="images/github_logo.png" alt="GitHub logo"></a>
+      </div>
+      <p id="footer_copyright">&copy Copyright: Maxime Arnal</p>
+    </footer>
 
   </div>
+
+</body>
+
+<script src="script.js"></script>
+
 </html>
