@@ -211,6 +211,17 @@ footer img:hover {
   font-weight: bold;
 }
 
+/*CV*/
+td, th {
+  border: none;
+  text-align: left;
+  padding: 1px;
+}
+
+th {
+  border-bottom: 2px solid #dd8627;
+}
+
 /* gallery */
 #gallery_text {
   margin-bottom: 40px;
