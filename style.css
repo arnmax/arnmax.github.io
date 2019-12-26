@@ -212,6 +212,10 @@ footer img:hover {
 }
 
 /* gallery */
+#gallery_text {
+  margin-bottom: 40px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 900px;
