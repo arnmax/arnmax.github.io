@@ -35,9 +35,11 @@ section a:hover {
 }
 
 p {
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
+/******************************************************************************/
 /* header formatting */
 header {
   background-image: url("images/header_bkgnd.jpg");
@@ -80,6 +82,7 @@ header div a {
   height: 80px;
 }
 
+/******************************************************************************/
 /* navigation  */
 #navbar {
   overflow: hidden;
@@ -152,6 +155,7 @@ header div a {
   padding-top: 47px;
 }
 
+/******************************************************************************/
 /* Footer */
 footer {
   display: flex;
@@ -181,6 +185,7 @@ footer img:hover {
   transition: 0.2s;
 }
 
+/******************************************************************************/
 /* Home page*/
 #presentation {
   overflow: auto;
@@ -200,6 +205,25 @@ footer img:hover {
   margin-top: 20px;
 }
 
+#interests {
+  display: flex;
+  align-items: center;
+}
+
+#interests p {
+  margin-right: 30px;
+  flex: 2.5;
+}
+
+aside {
+  flex: 2;
+  padding: 10px;
+  border: solid #555555 1px;
+  border-radius: 25px;
+  box-shadow: 4px 6px 8px #555555;
+}
+
+/******************************************************************************/
 /* publications page */
 #publications li {
   margin-top: 20px;
@@ -211,15 +235,33 @@ footer img:hover {
   font-weight: bold;
 }
 
+/******************************************************************************/
 /*CV*/
-td, th {
+table, td {
   border: none;
+  border-collapse: collapse;
   text-align: left;
-  padding: 1px;
+  padding: 2px;
+  vertical-align: center;
+}
+
+table div {
+  font-style: oblique;
 }
 
 th {
   border-bottom: 2px solid #dd8627;
+  border-collapse: collapse;
+}
+
+.theader::before {
+  height: 30px;
+  display: table-row;
+  content: '';
+}
+
+tr:nth-child(even) {
+  background-color: #dfdfdf;
 }
 
 /* gallery */
